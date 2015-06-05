@@ -130,8 +130,8 @@
     </Compile>
     <Compile Include="MyToolWindow.cs" />
     <Compile Include="Guids.cs" />
-    <Compile Include="ProcessHelper.cs" />
-    <Compile Include="ProcMagnetButton.cs" />
+    <Compile Include="Helpers\ProcessHelper.cs" />
+    <Compile Include="Controls\ProcMagnetButton.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,6 +182,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>
   </PropertyGroup>

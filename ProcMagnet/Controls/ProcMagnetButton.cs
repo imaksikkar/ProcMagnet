@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Company.ProcMagnet.Helpers;
+using EnvDTE;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Company.ProcMagnet
+namespace Company.ProcMagnet.Controls
 {
   /// <summary>
   /// Custom button
@@ -41,7 +43,7 @@ namespace Company.ProcMagnet
     /// <param name="e"></param>
     private void ProcMagnetButton_Click(object sender, RoutedEventArgs e)
     {
-      List<dynamic> processes = ProcessHelper.FindProcesses(this.TargetProcess);
+      List<Process> processes = ProcessHelper.FindProcesses(this.TargetProcess);
 
       switch (processes.Count)
       {

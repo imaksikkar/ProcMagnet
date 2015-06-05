@@ -3,7 +3,7 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-       xmlns:ProcMagnet="clr-namespace:Company.ProcMagnet"
+       xmlns:ProcMagnetCtrl="clr-namespace:Company.ProcMagnet.Controls"
        Background="{DynamicResource VsBrush.Window}"
        Foreground="{DynamicResource VsBrush.WindowText}"
        mc:Ignorable="d"
@@ -15,9 +15,9 @@
     </Grid.RowDefinitions>
     <StackPanel Name="pnlMain" Orientation="Vertical" Grid.RowSpan="3">
       <TextBlock Margin="10" HorizontalAlignment="Center">ProcMagnet</TextBlock>
-      <ProcMagnet:ProcMagnetButton Content="Word"       TargetProcess="winword.exe"/>
-      <ProcMagnet:ProcMagnetButton Content="Excel"      TargetProcess="excel.exe"/>
-      <ProcMagnet:ProcMagnetButton Content="Powerpoint" TargetProcess="powerpnt.exe"/>
+      <ProcMagnetCtrl:ProcMagnetButton Content="Word"       TargetProcess="winword.exe"/>
+      <ProcMagnetCtrl:ProcMagnetButton Content="Excel"      TargetProcess="excel.exe"/>
+      <ProcMagnetCtrl:ProcMagnetButton Content="Powerpoint" TargetProcess="powerpnt.exe"/>
     </StackPanel>
   </Grid>
 </UserControl>

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Company.ProcMagnet
+namespace Company.ProcMagnet.Helpers
 {
   class ProcessHelper
   {
@@ -18,7 +18,7 @@ namespace Company.ProcMagnet
     /// Given a process, attach the debugger to it
     /// </summary>
     /// <param name="process"></param>
-    public static void AttachProcess(dynamic process)
+    public static void AttachProcess(Process process)
     {
       if(process != null)
         process.Attach();
@@ -30,14 +30,14 @@ namespace Company.ProcMagnet
     /// </summary>
     /// <param name="processName"></param>
     /// <returns></returns>
-    public static List<dynamic> FindProcesses(String processName)
+    public static List<Process> FindProcesses(String processName)
     {
       DTE dte = ProcessHelper.GetDTE();
-      List<dynamic> processes = new List<dynamic>();
+      List<Process> processes = new List<Process>();
 
       if (dte != null)
       {
-        foreach (dynamic proc in dte.Debugger.LocalProcesses)
+        foreach (Process proc in dte.Debugger.LocalProcesses.Cast<Process>())
         {
           if (((proc.Name as String) ?? "").EndsWith(processName, StringComparison.OrdinalIgnoreCase))
             processes.Add(proc);
