@@ -5,15 +5,11 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcMagnet", "ProcMagnet\ProcMagnet.csproj", "{A6CA7504-21CF-490C-BA63-02DD205026B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcMagnet_IntegrationTests", "ProcMagnet\ProcMagnet_IntegrationTests\ProcMagnet_IntegrationTests.csproj", "{75B10AEC-7971-4BA7-B9A3-F799F069B916}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA27F092-2EB7-4DDF-9C6C-8E815CD7E6E5}"
 	ProjectSection(SolutionItems) = preProject
 		IntegrationTests.testsettings = IntegrationTests.testsettings
 		UnitTests.testsettings = UnitTests.testsettings
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcMagnet_UnitTests", "ProcMagnet\ProcMagnet_UnitTests\ProcMagnet_UnitTests.csproj", "{3A81FAC3-0A87-4D63-A15E-74D01838AA9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +21,6 @@ Global
 		{A6CA7504-21CF-490C-BA63-02DD205026B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6CA7504-21CF-490C-BA63-02DD205026B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6CA7504-21CF-490C-BA63-02DD205026B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75B10AEC-7971-4BA7-B9A3-F799F069B916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75B10AEC-7971-4BA7-B9A3-F799F069B916}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75B10AEC-7971-4BA7-B9A3-F799F069B916}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75B10AEC-7971-4BA7-B9A3-F799F069B916}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A81FAC3-0A87-4D63-A15E-74D01838AA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A81FAC3-0A87-4D63-A15E-74D01838AA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A81FAC3-0A87-4D63-A15E-74D01838AA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A81FAC3-0A87-4D63-A15E-74D01838AA9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
