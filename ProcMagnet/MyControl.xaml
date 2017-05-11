@@ -9,15 +9,16 @@
        mc:Ignorable="d"
        d:DesignHeight="300" d:DesignWidth="300"
        Name="MyToolWindow">
-  <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="64*"/>
-    </Grid.RowDefinitions>
-    <StackPanel Name="pnlMain" Orientation="Vertical" Grid.RowSpan="3">
-      <TextBlock Margin="10" HorizontalAlignment="Center">ProcMagnet</TextBlock>
-      <ProcMagnetCtrl:ProcMagnetButton Content="Word"       TargetProcess="winword.exe"/>
-      <ProcMagnetCtrl:ProcMagnetButton Content="Excel"      TargetProcess="excel.exe"/>
-      <ProcMagnetCtrl:ProcMagnetButton Content="Powerpoint" TargetProcess="powerpnt.exe"/>
-    </StackPanel>
-  </Grid>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Name="pnlMain" Orientation="Vertical" Grid.RowSpan="3">
+            <TextBlock Margin="10" HorizontalAlignment="Center">ProcMagnet</TextBlock>
+            <ProcMagnetCtrl:ProcMagnetButton Content="Word"       TargetProcess="winword.exe"/>
+            <ProcMagnetCtrl:ProcMagnetButton Content="Excel"      TargetProcess="excel.exe"/>
+            <ProcMagnetCtrl:ProcMagnetButton Content="Powerpoint" TargetProcess="powerpnt.exe"/>
+            <ProcMagnetCtrl:ProcMagnetButton Content="Crossfire"  TargetProcess="crossfire.exe"/>
+        </StackPanel>
+    </Grid>
 </UserControl>
